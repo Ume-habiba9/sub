@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frangrances.pk</title>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <style>
+        .navbar {
+            display: flex;
+            position: relative;
+        }
+
+        .navbar img {
+            width: 72px;
+            height: 62px;
+        }
+
+        .navbar ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            padding: 6px 36px;
+            font-size: 2.5rem;
+            font-family: 'Allison';
+            color: rgb(184, 10, 45);
+        }
+
+        .navbar ul li a:hover {
+            color: rgb(143, 26, 49);
+            background-color: rgb(194, 194, 194);
+            border-radius: 29px;
+        }
+
+        .home {
+            display: flex;
+            flex-direction: column;
+            padding: 34px 34px;
+        }
+
+        .home::before {
+            content: "";
+            background: url(back2.jpg) no-repeat;
+            height: 78%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            opacity: 0.79;
+        }
+
+        .home h1 {
+            text-align: center;
+            font-family: 'Allison';
+            font-size: 3.2rem;
+            color: rgb(90, 11, 11);
+            margin: 40px 0px 0px 10px;
+        }
+        .home h2 {
+            text-align:center ;
+            font-family: 'Allison';
+            font-size: 3.2rem;
+            color: rgb(151, 41, 41);
+            margin: 2px 2px;
+        }
+        .home p {
+            text-align: center;
+            color: black;
+            font-style: italic;
+            padding: 8px 134px;
+        }
+
+        .btn {
+            margin: auto;
+            padding: 4px;
+            border: 2px solid rgb(39, 35, 36);
+            background-color: rgba(112, 107, 107, 0.973);
+            border-radius: 8px;
+            color: white;
+        }
+
+        .our {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .our h1 {
+            text-align: center;
+            font-family: 'Allison';
+            color: rgb(107, 23, 8);
+            font-size: 3.4rem;
+            margin-top: 30px;
+        }
+
+
+        .box {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box1 {
+            border: 2px solid maroon;
+            border-radius: 17px;
+            text-align: center;
+            height: 30%;
+            width: 25%;
+            margin: 13px 44px;
+        }
+
+        .box1 h1 {
+            font-family: 'Allison';
+            font-size: 2.3rem;
+            color: rgb(107, 23, 8);
+            /* font-style: italic; */
+        }
+
+        .box1 img {
+            width: 150px;
+            height: 150px;
+            padding: 9px 9px;
+        }
+
+        .box1 p {
+            font-style: italic;
+            color: brown;
+
+        }
+
+        .box2 {
+            border: 2px solid maroon;
+            border-radius: 17px;
+            text-align: center;
+            height: 30%;
+            width: 25%;
+            margin: 13px 44px;
+        }
+
+        .box2 h1 {
+            font-family: 'Allison';
+            font-size: 2.3rem;
+            color: rgb(107, 23, 8);
+            /* font-style: italic; */
+        }
+
+        .box2 img {
+            width: 150px;
+            height: 150px;
+            padding: 9px 9px;
+        }
+
+        .box2 p {
+            font-style: italic;
+            color: brown;
+
+        }
+
+        .box3 {
+            border: 2px solid maroon;
+            border-radius: 17px;
+            text-align: center;
+            height: 30%;
+            width: 25%;
+            margin: 13px 44px;
+        }
+
+        .box3 h1 {
+            font-family: 'Allison';
+            font-size: 2.3rem;
+            color: rgb(107, 23, 8);
+            /* font-style: italic; */
+        }
+
+        .box3 img {
+            width: 150px;
+            height: 150px;
+            padding: 9px 9px;
+        }
+
+        .box3 p {
+            font-style: italic;
+            color: brown;
+
+        }
+
+        .sponsor {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            margin: 100px 0px 0px 0px;
+        }
+
+        .sponsor::before {
+            content: "";
+            position: absolute;
+            background: url(https://images.unsplash.com/photo-1612813033813-d360b1cc5187?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80) center center;
+            height: 78%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        .sponsor h1 {
+            text-align: center;
+            font-family: 'Allison';
+            color: rgb(107, 23, 8);
+            font-size: 3.4rem;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .gucci img {
+            width: 75px;
+            display: flex;
+            height: 75px;
+            padding: 0px 0px 0px 344px;
+        }
+
+        .chanel img {
+            display: flex;
+            width: 75px;
+            height: 74px;
+            padding: 0px 0px 0px 80px;
+        }
+
+        .dior img {
+            display: flex;
+            width: 90px;
+            height: 54px;
+            padding: 10px 0px 0px 80px;
+            opacity: 12;
+        }
+
+        .revlon img {
+            display: flex;
+            width: 90px;
+            height: 54px;
+            padding: 15px 0px 0px 80px;
+            opacity: 19.9;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            margin-top: 120px;
+            margin-bottom: 0px;
+        }
+
+        .contact::before {
+            content: "";
+            position: absolute;
+            
+            background: url(https://static1.bigstockphoto.com/5/4/2/large1500/245078380.jpg);
+            height: 110%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .contact h1 {
+            text-align: center;
+            font-family: 'Allison';
+            font-size: 3.3rem;
+            color: rgb(107, 23, 8);
+        }
+
+        .form {
+            /* border: 2px solid maroon; */
+            border-radius: 18px;
+            padding: 34px 34px;
+            height: 450px;
+            width: 500px;
+            margin: 15px 480px;
+        }
+
+        .form input {
+            display: block;
+            padding: 10px 80px;
+            margin: 14px 34px;
+            border: 2px solid rgb(88, 21, 21);
+            /* background-color: rgb(175, 163, 163); */
+            border-radius: 15px;
+        }
+.form input::placeholder{
+    color: maroon;
+font-style: italic;
+
+}
+        .a input {
+            padding: 60px 80px;
+            text-align: start;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="lg.jpg" alt="">
+        </div>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Our Collection</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section class="home">
+        <h1>
+            Welcome to the World of Frangrances
+        </h1>
+        <h2>Be Bold , Be You</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptate aperiam, nisi quasi quidem, iste
+            quis asperiores nulla sed beatae enim totam cumque! Incidunt non alias dicta numquam debitis earum.</p>
+        <button class="btn">Shop Now</button>
+    </section>
+    <section id="collection">
+        <div class="our">
+            <h1>Our Collection</h1>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <img src="back3.jpg" alt="">
+                <h1>Chemical Free</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora soluta magni consectetur earum ugiat
+                    modi repellendus doloremque minus?</p>
+            </div>
+
+            <div class="box2">
+                <img src="https://images.unsplash.com/photo-1607329128829-63f2a9bb7e6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                    alt="">
+                <h1>Long Lasting</h1>
+                <p>Lorem ipsum dolor sit ameias
+                    non, sed eum sint laudantium minima temporibus
+                    voluptatum fugiat. Ullam, eaque!</p>
+            </div>
+
+            <div class="box3">
+                <img src="https://images.unsplash.com/photo-1609451043305-745f798b51a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80"
+                    alt="">
+                <h1>Originality</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil soluta ipsa eaque? Id, ipsam
+                    quibusdam?</p>
+            </div>
+        </div>
+    </section>
+    <section class="sponsor">
+        <h1>Sponsored By:</h1>
+        <div class="img">
+            <div class="gucci">
+                <img src="gucci.png" alt="">
+            </div>
+            <div class="chanel">
+                <img src="chanel.png" alt="">
+            </div>
+            <div class="dior">
+                <img src="dior.png" alt="">
+            </div>
+            <div class="revlon">
+                <img src="Revlon-logo.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <form action="Contact Us">
+            <div class="form">
+                <input type="text" name="Name" id="Name" placeholder="Enter Your Name">
+                <input type="email" name="Email" id="Email" placeholder="Enter Your Email Id">
+                <input type="number" name="Phone" id="Phone" placeholder="Enter Your Phone No">
+                <div class="a">
+                    <input type="text" name="Address" id="Address" placeholder="Enter Your Address">
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
